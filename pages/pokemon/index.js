@@ -36,15 +36,15 @@ const PokeList = () => {
 
       <main className={styles.main}>
 
-        <h1 class="text-gray-800 font-bold" >ポケモン LIST</h1>
-<div class="mt-32">
-    <div class="px-4 sm:px-8 max-w-5xl m-auto">
-        <ul class="border border-black-200 rounded overflow-hidden shadow-md">
+        <h1 className="text-gray-800 font-bold" >ポケモン LIST</h1>
+<div className="mt-32">
+    <div className="px-4 sm:px-8 max-w-5xl m-auto">
+        <ul className="border border-black-200 rounded overflow-hidden shadow-md">
         {pokemonList.map((pokemon, index) => {
             const pokemonId = getIdFromUrl(pokemon.url)
             return (
                 <div key={index}>       
-                <a href={`/pokemon/${pokemonId}`} aria-current="true" class="px-4 py-2 bg-white  border-black-200 text-black ">
+                <a href={`/pokemon/${pokemonId}`} aria-current="true" className="px-4 py-2 bg-white  border-black-200 text-black ">
                     {pokemon.name}
                 </a>
                 </div> 
